@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <titile>clock</titile>
+    </head>
+    
+    <body onload="time()">
+        <center>
+        <div id="hi" ></div>
+    </center>
+    </body>
+    <script>
+        function time(){
+            let a=new Date()
+            let b=a.getHours()
+            let c=a.getMinutes()
+            let d=a.getSeconds()
+            setInterval(()=>{
+                document.getElementById("hi").innerHTML=b+":"+c+":"+d
+            },[1000])
+        }
+    </script>
+</html>
