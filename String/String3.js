@@ -7,6 +7,7 @@ let c=[] // taking empty array to push
 for(cap of b){
     let d=cap.slice(0,1).toUpperCase()
     c.push(d+cap.slice(1))
+    
 }
 console.log(c)
 let e=c.join(" ")

@@ -36,4 +36,6 @@ let e=d.toString("").replace(","," ")
 console.log(e)
 
 
-
+//
+let rose="flower"
+console.log(rose.toUpperCase())
