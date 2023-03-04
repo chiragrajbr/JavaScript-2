@@ -1,4 +1,5 @@
 //fat arrow function - it reduces the code
+//not declaring function keyword 
 let a=()=>{
     console.log("fat arrow function")
 }
