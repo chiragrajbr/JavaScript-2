@@ -1,0 +1,38 @@
+<html>
+    <head>
+      <script>
+        let a=[{id:101,name:"chirag"},{id:102,name:"darshu"}]
+        let b=(ele)=>{
+            return new Promise((resolve,reject)=>{
+              setTimeout(()=>{
+                a.push(ele)?resolve():reject()  
+              },1000)
+            })
+        }
+        let c=()=>{
+            row=""
+            for(let elements of a){
+                  row+=`<tr><td>${elements.id}</td><td>${elements.name}</td></tr>`
+            }
+            document.getElementById("aa").innerHTML=row
+        }
+        b({id:103,name:"muni"}).then(()=>{
+            c()
+        })
+        .catch(()=>{})
+
+    </script> 
+    </head>
+    <body>
+           <table>
+            <thead>
+        <th>id</th>
+        <th>name</th>
+            </thead>
+
+             <tbody id="aa">
+
+            </tbody>
+            </table> 
+    </body>
+</html>

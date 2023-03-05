@@ -1,4 +1,5 @@
-//object destructure - to fetch which value we need
+//object destructure - reading data like variables
+// to fetch which value we need
 let a={
     "id":101,
     "name":"chirag"
