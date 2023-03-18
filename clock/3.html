@@ -14,9 +14,16 @@
             let b=a.getHours()
             let c=a.getMinutes()
             let d=a.getSeconds()
-            setInterval(()=>{
-                document.getElementById("hi").innerHTML=b+":"+c+":"+d
-            },[1000])
+            let session=""
+            if(b>=12){
+                session="pm"
+            }
+            else {
+                session="am"
+            }
+            document.getElementById("hi").innerHTML=b+":"+c+":"+d+":"+session
         }
+
+        setInterval(time,[1000])
     </script>
 </html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+  <div id="aa"></div>  
+</body>
+<script>
+
+function clock(){
+    let time=new Date();
+let a=time.toLocaleTimeString();
+    document.getElementById("aa").innerHTML=a;
+}
+
+setInterval(clock,[1000])
+</script>
+</html>
